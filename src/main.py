@@ -1,10 +1,9 @@
-from textnode import TextNode
+from utils import generate_pages_recursive
+
 
 def main():
-    node1 = TextNode("Hello World!", "bold", "http://nooptoday.com")
-    print(node1)
+    generate_pages_recursive("content", "template.html", "public")
+
 
 if __name__ == "__main__":
     main()
-
-
